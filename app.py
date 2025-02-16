@@ -7,7 +7,7 @@ from openai import OpenAI
 # Initialize OpenRouter client
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key=os.getenv('OPENROUTER_API_KEY'),
 )
 
 # Streamlit App Title
